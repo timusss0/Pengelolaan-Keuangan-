@@ -38,7 +38,7 @@ class WidgetExpenseChart extends ChartWidget
         return [
             'datasets' => [
                 [
-                    'label' => 'Pengeluaran per Hari',
+                    'label' => 'Pengeluaran',
                     'data' => $data->map(fn (TrendValue $value) => $value->aggregate),
                 ],
             ],
